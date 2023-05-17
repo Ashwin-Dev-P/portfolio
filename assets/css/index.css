@@ -1,10 +1,12 @@
 :root {
 	--primary-theme: #000000;
+	--secondary-color: #f2f0f0;
 }
 
 body {
 	font-family: cursive;
 	margin: 0%;
+	background-color: var(--secondary-color);
 }
 
 h3 {
@@ -84,8 +86,8 @@ details li {
 		to bottom,
 		#000000 0%,
 		#000000 70%,
-		#ffffff 70%,
-		#ffffff 100%
+		var(--secondary-color) 70%,
+		var(--secondary-color) 100%
 	);
 
 	padding: 5%;
@@ -103,6 +105,8 @@ details li {
 
 	width: 80%;
 	overflow: hidden;
+
+	box-shadow: 1px 1px 1px 1px;
 }
 
 .display-image {
@@ -121,6 +125,25 @@ details li {
 
 .intro-paragraph {
 	margin: 10% 6%;
+}
+
+.tech-grid-container {
+	margin-top: 5%;
+}
+
+.tech-grid-container li {
+	padding: 1% 0%;
+}
+
+.tech-grid-item {
+	margin: 0% 5%;
+	padding: 0% 5%;
+	background-color: var(--secondary-color);
+}
+
+.tech-grid-item:hover {
+	transform: scale(1.03);
+	transition-duration: 0.3s;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -142,6 +165,18 @@ details li {
 
 	.intro-paragraph {
 		margin: 3.5% 20%;
+	}
+
+	.tech-grid-container {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+
+	.tech-grid-item {
+		width: 40%;
+		padding: 10% 25%;
+		background-color: #ffffff;
+		box-shadow: 1px 1px 1px 1px gray;
 	}
 }
 
