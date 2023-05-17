@@ -1,5 +1,5 @@
 :root {
-	--primary-theme: #ffffff;
+	--primary-theme: #000000;
 }
 
 body {
@@ -7,9 +7,73 @@ body {
 	margin: 0%;
 }
 
+h3 {
+	margin-bottom: 0%;
+}
+
+ul {
+	padding-left: 0%;
+}
+
+li {
+	list-style-type: none;
+}
+
+summary {
+	text-align: center;
+	border: 4px solid transparent;
+	outline: none;
+
+	/* change border color when clicked */
+	&:focus {
+		border-color: black;
+	}
+
+	padding: 1rem;
+	display: block;
+	background: var(--primary-theme);
+	color: white;
+	padding-left: 2.2rem;
+	position: relative;
+
+	cursor: pointer;
+}
+
+summary:before {
+	content: "";
+
+	/* design for the triangular arrow */
+	border-width: 0.4rem;
+	border-style: solid;
+	border-color: transparent transparent transparent #fff;
+
+	position: absolute;
+	top: 1.3rem;
+	left: 1rem;
+}
+details {
+	margin-top: 5px;
+}
+
+details[open] > div {
+	margin: 5% 15%;
+}
+
+/* Turn the triangle to down when the details is open */
+details[open] > summary:before {
+	transform: rotate(90deg);
+}
+
+details li {
+	list-style-type: square;
+}
+
 .container {
-	padding: 1% 1%;
 	margin-bottom: 15%;
+}
+
+.sections {
+	margin: 20% 5%;
 }
 
 .intro-img-section {
@@ -18,8 +82,8 @@ body {
 
 	background: linear-gradient(
 		to bottom,
-		#f1f1f1 0%,
-		#f1f1f1 70%,
+		#000000 0%,
+		#000000 70%,
 		#ffffff 70%,
 		#ffffff 100%
 	);
@@ -89,6 +153,10 @@ body {
 
 	.intro-paragraph {
 		margin: 2% 25%;
+	}
+
+	.sections {
+		margin: 17% 17%;
 	}
 }
 
