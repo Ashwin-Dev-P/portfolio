@@ -170,11 +170,6 @@ address {
 	background-color: var(--secondary-color);
 }
 
-.tech-grid-item:hover {
-	transform: scale(1.03);
-	transition-duration: 0.3s;
-}
-
 .education-section li {
 	padding: 0.5% 0%;
 }
