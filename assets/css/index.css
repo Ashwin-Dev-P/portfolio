@@ -9,6 +9,11 @@ body {
 	background-color: var(--secondary-color);
 }
 
+a {
+	text-decoration: none;
+	color: var(--primary-theme);
+}
+
 h3 {
 	margin-bottom: 0%;
 }
@@ -70,12 +75,24 @@ details li {
 	list-style-type: square;
 }
 
+address {
+	padding: 0% 10%;
+	width: 80%;
+	line-height: 250%;
+}
+
 .bold {
 	font-weight: bold;
 }
 
 .container {
 	margin-bottom: 15%;
+}
+
+.icons {
+	color: var(--primary-theme);
+	margin: 0% 1%;
+	font-size: 130%;
 }
 
 .pl {
@@ -215,6 +232,11 @@ details li {
 	.pl {
 		padding-left: 10%;
 	}
+
+	address {
+		padding: 0% 30%;
+		width: 40%;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -242,6 +264,11 @@ details li {
 	.education-section li {
 		padding: 0.25% 0%;
 	}
+
+	address {
+		padding: 0% 25% 0% 35%;
+		width: 40%;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -261,6 +288,11 @@ details li {
 	.education-li-container {
 		display: grid;
 		grid-template-columns: 80% 20%;
+	}
+
+	address {
+		padding: 0% 20% 0% 40%;
+		width: 40%;
 	}
 }
 
