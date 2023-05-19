@@ -78,8 +78,16 @@ details li {
 	margin-bottom: 15%;
 }
 
+.pl {
+	padding-left: 7%;
+}
+
 .sections {
 	margin: 20% 5%;
+}
+
+.list-style-type-square > li {
+	list-style-type: square;
 }
 
 .intro-img-section {
@@ -202,6 +210,10 @@ details li {
 
 	.education-section li {
 		padding: 0.25% 0%;
+	}
+
+	.pl {
+		padding-left: 10%;
 	}
 }
 
