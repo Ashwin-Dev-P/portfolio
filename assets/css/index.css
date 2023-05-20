@@ -231,6 +231,14 @@ address {
 	margin-top: 0%;
 }
 
+.contact-me-section li {
+	margin: 2% 0%;
+}
+
+.font-awesome-icons-svg {
+	width: 25px;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 	.display-img-figure {
