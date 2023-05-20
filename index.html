@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- CSP to prevent XSS. This below policy allows content to be loaded only from the same origin and allows inline js -->
+		<!-- object-src 'none'  prevents fetching and executing plugin resources embedded using <object>, <embed> or <applet> tags. The most common example is Flash.  -->
+		<!-- Only script <script nonce="2726c7f26c"></script> will be executed. If browser doesnt support nonce, unsafe-inline will be executed -->
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'nonce-2726c7f26c' 'unsafe-inline';object-src 'none'; base-uri 'self' "
+		/>
+
 		<meta charset="UTF-8" />
 
 		<meta name="description" content="Ashwin Dev's Portfolio" />
@@ -10,6 +18,7 @@
 		/>
 		<meta name="author" content="Ashwin Dev P" />
 
+		<!-- Address bar colour for PWA - Progressive Web Applications -->
 		<meta
 			name="theme-color"
 			media="(prefers-color-scheme: light)"
@@ -19,12 +28,6 @@
 			name="theme-color"
 			media="(prefers-color-scheme: dark)"
 			content="black"
-		/>
-
-		<!-- CSP to prevent XSS. This below policy allows content to be loaded only from the same origin and allows inline js -->
-		<meta
-			http-equiv="Content-Security-Policy"
-			content="default-src 'self'; script-src 'unsafe-inline'"
 		/>
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
