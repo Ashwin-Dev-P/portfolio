@@ -1,0 +1,23 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+.display-img-figure {
+	width: 45%;
+	margin: 7% 10% 0% 10%;
+}
+
+.intro-paragraph {
+	margin: 5% 6%;
+}
+
+.education-section li {
+	padding: 0.25% 0%;
+}
+
+.pl {
+	padding-left: 10%;
+}
+
+address {
+	padding: 0% 30%;
+	width: 40%;
+}

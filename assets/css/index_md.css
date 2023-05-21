@@ -1,0 +1,30 @@
+/* Medium devices (landscape tablets, 768px and up) */
+
+.display-img-figure {
+	width: 30%;
+}
+
+.intro-paragraph {
+	margin: 3.5% 20%;
+}
+
+.tech-grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.tech-grid-item {
+	width: 40%;
+	padding: 10% 25%;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 1px 1px gray;
+}
+
+.education-section li {
+	padding: 0.25% 0%;
+}
+
+address {
+	padding: 0% 25% 0% 35%;
+	width: 40%;
+}

@@ -1,0 +1,24 @@
+/* Large devices (laptops/desktops, 992px and up) */
+
+.display-img-figure {
+	width: 25%;
+	margin: 5% 10% 0% 10%;
+}
+
+.intro-paragraph {
+	margin: 2% 25%;
+}
+
+.sections {
+	margin: 17% 17%;
+}
+
+.education-li-container {
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+
+address {
+	padding: 0% 20% 0% 40%;
+	width: 40%;
+}
