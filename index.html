@@ -34,6 +34,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portfolio</title>
 
+		<!--Style sheets based on screen size-->
 		<link rel="icon" type="image/x-icon" href="./assets/images/briefcase.png" />
 
 		<link
@@ -68,18 +69,16 @@
 		<div class="container">
 			<header>
 				<section class="intro-img-section">
-					<figure class="display-img-figure">
-						<span class="display-image-container">
-							<img
-								src="./assets/images/Ashwin_Dev_in_presido_office.png"
-								alt="Ashwin Dev working in Presidio office"
-								class="display-img"
-							/>
-						</span>
-						<figcaption class="text-center display-img-figcaption">
-							Ashwin Dev
-						</figcaption>
-					</figure>
+					<picture class="display-image-container">
+						<source
+							srcset="./assets/images/Ashwin_Dev_in_presido_office.webp"
+						/>
+						<img
+							src="./assets/images/Ashwin_Dev_in_presido_office.png"
+							alt="Ashwin Dev working in Presidio office"
+							class="display-img"
+						/>
+					</picture>
 				</section>
 
 				<section>

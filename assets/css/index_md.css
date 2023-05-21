@@ -1,7 +1,8 @@
 /* Medium devices (landscape tablets, 768px and up) */
 
-.display-img-figure {
+.display-image-container {
 	width: 30%;
+	margin: 7% 35% 0% 35%;
 }
 
 .intro-paragraph {
