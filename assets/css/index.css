@@ -34,6 +34,13 @@ li {
 
 img {
 	text-align: center;
+
+	/* To make sure image is non selectable when dragged over by mouse accidentally */
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
 }
 
 summary {
