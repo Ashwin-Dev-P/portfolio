@@ -64,6 +64,14 @@
 			type="text/css"
 			hreflang="en"
 		/>
+
+		<!-- Pre load critical images to reduce critical chaining to improve performance -->
+		<link
+			rel="preload"
+			as="image"
+			href="./assets/images/Ashwin_Dev_in_presido_office.webp"
+			imagesizes="80vw"
+		/>
 	</head>
 	<body>
 		<div class="container">
@@ -77,6 +85,7 @@
 							src="./assets/images/Ashwin_Dev_in_presido_office.png"
 							alt="Ashwin Dev working in Presidio office"
 							class="display-img"
+							width="100%"
 						/>
 					</picture>
 				</section>
