@@ -160,6 +160,9 @@ address {
 
 	background-color: var(--image-background-color);
 
+	/* Telling the browser in advance that the property will change to improve performance */
+	will-change: transform;
+
 	/* transition back smoothly to original size on mouse moved over */
 	transition-duration: 0.6s;
 	transition-timing-function: ease-in-out;
@@ -167,10 +170,13 @@ address {
 
 .display-img {
 	width: 100%;
+
+	/* Telling the browser in advance that the property will change to improve performance */
+	will-change: transform;
 }
 
 .display-img:hover {
-	scale: 1.2;
+	transform: scale(1.2);
 	transition-duration: 0.6s;
 	transition-timing-function: ease-in-out;
 }
