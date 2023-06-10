@@ -10,6 +10,10 @@ body {
 	background-color: var(--secondary-color);
 }
 
+body > div.container {
+	margin-bottom: 0%;
+}
+
 a {
 	text-decoration: none;
 	color: var(--primary-theme);
@@ -91,10 +95,21 @@ details li {
 	list-style-type: square;
 }
 
+footer {
+	background-color: var(--primary-theme);
+	padding-top: 6%;
+	padding-bottom: 6%;
+}
+
 address {
 	padding: 0% 10%;
 	width: 80%;
 	line-height: 250%;
+}
+
+address a,
+.contact-me-section > h2 {
+	color: var(--secondary-color);
 }
 
 .bold {
@@ -248,6 +263,16 @@ address {
 
 .font-awesome-icons-svg {
 	width: 25px;
+}
+
+/* To make the font awesome icons and text align vertically straight to each other */
+.footer-icon {
+	vertical-align: bottom;
+	display: inline-block;
+}
+.footer-icon-text {
+	vertical-align: top;
+	display: inline-block;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
